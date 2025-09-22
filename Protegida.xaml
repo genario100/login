@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="login.NewPage1"
-             Title="NewPage1">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             x:Class="login.Protegida"
+             Title="Protegida">
+    <VerticalStackLayout
+         VerticalOptions="Center"
+         Spacing="10"
+         Padding="30">
+        <Frame>
+            <VerticalStackLayout>
+                
+                <Label x:Name="lbl_boasvindas"
+                    Text="Protegida"  
+                    HorizontalOptions="Center" 
+                    FontSize="18"/>
+                
+                <Label
+                    Text="Protegida"  
+                    HorizontalOptions="Center" 
+                    FontSize="50"/>
+                
+               <Button Text="Voltar" 
+                        FontSize="24" 
+                        BackgroundColor="Coral" 
+                        HorizontalOptions="Center"
+                        Clicked="Button_Clicked_1"/>
+                
+            </VerticalStackLayout>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>

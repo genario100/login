@@ -7,18 +7,19 @@
         public MainPage()
         {
             InitializeComponent();
-        }
+        }// fecha MainPage
 
         private void OnCounterClicked(object? sender, EventArgs e)
         {
-            count++;
+           new Window(new Login());
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        }// fecha OnCounterClicked
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
-    }
-}
+       
+       
+      
+    
+
+    }// feicha classe
+
+}// fecha namespace
